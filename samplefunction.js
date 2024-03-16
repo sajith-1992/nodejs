@@ -1,6 +1,9 @@
-function sample(){
+function sample(num1 ,num2){
+    var sum = num1 + num2;
+    return sum;
     
-    return 10
 }
 
-console.log(sample())
+
+var aval =sample(10,20)
+console.log(aval)
