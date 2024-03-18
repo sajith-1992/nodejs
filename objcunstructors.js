@@ -3,7 +3,7 @@ var person ={
     age:35,
     place:"thrissur",
     display:function(){
-        console.log("its working")
+        console.log("its "+this.name+"my age is  "+this.age+this.place    ) 
       
        
     }}
