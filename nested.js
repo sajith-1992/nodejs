@@ -12,5 +12,5 @@ function hello(){
 
 }
 hello()
-console.log(a)
+console.log()
 
