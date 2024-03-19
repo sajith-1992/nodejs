@@ -10,4 +10,10 @@ function person(name,place,gender){
 
 var hello = new person("sajith","thrissur","male")
 var hoi  =  new person("abi","kannur","still finding")
-hoi.hey()
+
+hello.display=function(){
+    console.log("hai this is from display function"+this.name)
+}
+
+hello.display()
+
