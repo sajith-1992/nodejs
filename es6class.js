@@ -1,8 +1,17 @@
-class hello{
+class sampleHello{
+    displayHello(){
+        console.log("its working")
+    }
+}
+
+class hello extends sampleHello {
+    
     constructor(name,palce,age){
+            super()
             this.name=name
             this.palce=palce
             this.age=age
+            
 
 
 
@@ -14,6 +23,4 @@ class hello{
 
 var name = new hello("sajith","mohan",12)
 var hey = new hello("bindiya","pavam",27)
-console.log(hey)
-console.log(name)
-name.display()
+hey.displayHello()
