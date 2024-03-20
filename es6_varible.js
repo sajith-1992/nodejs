@@ -1,25 +1,8 @@
-var a =10
-function hello(){
-  var i =0
- 
-  hey()
-  let a =20
+const find = "sajith"
+const hello = ["abi","sajith","people","where"]
+console.log(hello)
+hello.append ="people2"
+hello.push = "sajith2"
+//hello = ["hai","hoi","silver"] cannot replace whole array but can push
+console.log(hello)
 
-function hey(){
-    
-
-  i =10;
-   
-}
-console.log(i)
-
-   
-    
-
-      
- 
- 
-    
-}
-
-hello()
