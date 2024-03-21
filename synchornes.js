@@ -8,3 +8,12 @@ function longTask(miliseconds){
 console.log("start")
 longTask(3000)
 console.log("stop")
+
+console.log("start")
+longTask(3000)
+console.log("stop")
+
+
+console.log("start")
+longTask(3000)
+console.log("stop")
