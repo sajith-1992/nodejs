@@ -1,7 +1,10 @@
-var dt=new Date()
-for(var i=0;i<1000;i++){
-    console.log("loop")
+function longTask(miliseconds){
+    var dt= new Date()
 
+    while((new Date()-dt)<=miliseconds){
+
+    }
 }
- var result= new Date()-dt
- console.log(result)
+console.log("start")
+longTask(3000)
+console.log("stop")
