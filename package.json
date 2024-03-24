@@ -1,5 +1,23 @@
 {
   "dependencies": {
+    "change-case-all": "^2.1.0",
     "readline-sync": "^1.4.10"
-  }
+  },
+  "name": "c",
+  "version": "1.0.0",
+  "main": "array.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sajith-1992/nodejs.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sajith-1992/nodejs/issues"
+  },
+  "homepage": "https://github.com/sajith-1992/nodejs#readme",
+  "description": ""
 }
