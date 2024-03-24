@@ -2,7 +2,9 @@ var http = require('http');
 var fs = require('fs');
 
 http.createServer(function (req, res) {
-    fs.readFile('sample.html', 'utf8', function(err, html) {
+
+    if(req.url==="/")
+    {fs.readFile('sample.html', 'utf8', function(err, html) {
         if (err) {
             // Handle error
             console.error('Error reading HTML file:', err);
@@ -13,7 +15,17 @@ http.createServer(function (req, res) {
             res.write(html); //write the HTML content to the response
             res.end(); //end the response
         }
-    });
+    })}
+    else if(req.url==="/admin"){
+        res.write("this is admin")
+        res.end()
+
+    }else if(req.url==="/user"){
+        res.write("this is user page ")
+        res.end()
+
+    }
+    ;
 }).listen(3000, function() {
     console.log('Server is running on port 3000');
 });
