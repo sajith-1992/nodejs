@@ -27,6 +27,7 @@ http.createServer(function (req, res) {
         res.write("this is user page ")
         res.end()
 
+
     }
     else if(q.pathname==="/signup")
     {fs.readFile('signup.html', 'utf8', function(err, html) {
@@ -42,7 +43,9 @@ http.createServer(function (req, res) {
         }
     })
 
-    } else if(q.pathname==="/signupaction"){
+    } else if(q.pathname==="/signupaction"){ 
+        
+        
         fs.readFile('signupform.html',(err,data)=>{
             if (err) {
                 // Handle error
@@ -56,6 +59,11 @@ http.createServer(function (req, res) {
             }
         })
         
+    }
+    else{
+        console.error('Error reading HTML file:', err);
+        res.writeHead(500, {'Content-Type': 'text/plain'});
+        res.end('Internal Server Error');
     }
 
 
