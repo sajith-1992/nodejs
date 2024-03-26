@@ -46,7 +46,9 @@ http.createServer(function (req, res) {
     } else if(q.pathname==="/signupaction"){ 
         
         console.log(q.query)
-        fs.readFile('signupform.html',(err,data)=>{
+        
+        res.write("<h1>"+q.query.email+"</h1>")
+        /* fs.readFile('signupform.html',(err,data)=>{
             if (err) {
                 // Handle error
                 console.error('Error reading HTML file:', err);
@@ -54,12 +56,12 @@ http.createServer(function (req, res) {
                 res.end('Internal Server Error');
             } else {
                 res.writeHead(200, {'Content-Type': 'text/html'});
-                res.write(data); //write the HTML content to the response
+                res.write(<h1>+q.query.email+</h1>); //write the HTML content to the response
                 res.end(); //end the response
             }
-        })
+        }) */
         
-    }
+    } 
     else{
         console.error('Error reading HTML file:', err);
         res.writeHead(500, {'Content-Type': 'text/plain'});
