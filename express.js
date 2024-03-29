@@ -2,13 +2,17 @@
  const path = require("path")
  const app = express()
 
+app.use(function(req,res,next){
+    console.log("working")
+    next()
+  
+})
 
 
-
- app.get('/',(req,res)=>{
+ app.get('/sign',(req,res)=>{
     res.sendFile (path.join(__dirname,"/signup.html"))
  })
-app.get('/sign',(req,res)=>{
+app.post('/sign',(req,res)=>{
     res.send("hai")
 })
  app.listen(3000,()=>{
