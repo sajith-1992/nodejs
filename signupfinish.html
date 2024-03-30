@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup Finish</title>
+</head>
+<body>
+    <h1 id="emailHeading">Signup Finished!</h1>
+    <script>
+        // Extracting the emailup value from the URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const emailup = urlParams.get('email');
+        // Set the innerText of the h1 tag to the emailup value
+        document.getElementById('emailHeading').innerText = "Signup Finished for " + emailup;
+    </script>
+</body>
+</html>
